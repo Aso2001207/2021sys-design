@@ -1,4 +1,4 @@
-```
+```uml
 @startuml
 　kyaku-> ho-ru: Request
  ho-ru-> tyubou: Request
