@@ -2,7 +2,7 @@
 @startuml
 
 entity "購入テーブル" as purchase <d_purchase>
-<<T,MASTER_MARK_COLOR>> {
+<<T,TABLE_MARK_COLOR>> {
 + order_id[PK]
 --
 customer_code
