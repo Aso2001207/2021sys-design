@@ -22,7 +22,7 @@ skinparam class {
 
 
 
-package "ECサイト" as target_system {
+
 
 entity "購入テーブル" as purchase <d_purchase>
 <<M,MASTER_MARK_COLOR>> {
@@ -43,6 +43,6 @@ item_code
 price
 num
 }
-}
+
 @enduml
 ```
