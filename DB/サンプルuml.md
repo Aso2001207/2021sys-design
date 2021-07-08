@@ -26,11 +26,6 @@ skinparam class {
     ArrowColor Black
 }
 
-package "ECサイト" as target_system {
-    /'
-      マスターテーブルを M、トランザクションを T などで表記
-      １文字なら "主" とか "従" まど日本語でも記載可能
-     '/
 
 
 
