@@ -1,11 +1,9 @@
 ```startuml
 @startuml
+!define MASTER_MARK_COLOR Orange 
+!define TRANSACTION_MARK_COLOR DeepSkyBlue
 
-
- MASTER_MARK_COLOR Orange 
- TRANSACTION_MARK_COLOR DeepSkyBlue
-
-
+'グラデーションさせる場合 #xx-xx
 !define MAIN_ENTITY #MintCream-MistyRose
 
 /'
@@ -19,6 +17,10 @@ skinparam class {
     'リレーションの色
     ArrowColor Black
 }
+
+package "ECサイト" as target_system {
+
+ 
 
 
 
@@ -42,6 +44,7 @@ entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail>
 item_code
 price
 num
+}
 }
 
 @enduml
