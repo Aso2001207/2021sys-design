@@ -2,8 +2,8 @@
 @startuml
 
 
-define MASTER_MARK_COLOR Orange 
-define TRANSACTION_MARK_COLOR DeepSkyBlue
+ MASTER_MARK_COLOR Orange 
+ TRANSACTION_MARK_COLOR DeepSkyBlue
 
 
 !define MAIN_ENTITY #MintCream-MistyRose
