@@ -32,7 +32,7 @@ mail
 del_flag
 reg_date
 }
-entity "カテゴリマスタ" as m_category <m_category>
+entity "カテゴリマスタ" as m_category <m_category>{
 + category_id[PK]
 --
 name
