@@ -21,7 +21,17 @@ price
 num
 }
 
-
+entity "顧客マスタ" as m_customers <m_customers>{
++ customaer_code [PK][NN]
+--
+pass
+name
+address
+tel
+mail
+del_flag
+reg_date
+}
 
 @enduml
 ```
