@@ -39,7 +39,7 @@ name
 reg_date
 }
 
-entity "商品マスタ" as m_items <m_items>
+entity "商品マスタ" as m_items <m_items>{
 + item_code[PK]
 --
 item_name[NN]
