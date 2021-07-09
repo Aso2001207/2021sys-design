@@ -13,7 +13,7 @@ total_price
 }
 entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail>
 {
-+ order_id [PK]
++ order_id [PK][NN][FK]
 + detail_id [PK]
 --
 item_code
