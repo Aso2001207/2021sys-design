@@ -33,7 +33,7 @@ del_flag
 reg_date
 }
 entity "カテゴリマスタ" as m_category <m_category>
-+ category_id
++ category_id[PK]
 --
 name
 reg_date
