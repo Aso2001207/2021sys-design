@@ -50,6 +50,8 @@ detail
 del_flag
 reg_date
 }
+
+
  
 
 
