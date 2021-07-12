@@ -1,5 +1,5 @@
 ```startuml
-@startuml
+@startuml erd
 !include サンプルuml.md
 
 購入テーブル }o--o| 顧客マスタ
