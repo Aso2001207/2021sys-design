@@ -11,7 +11,7 @@ package "ECサイト" as target_system {
 customer_code
 purchase_date
 total_price
-購入テーブル }o--o| 顧客マスタ
+
 }
 entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail>
 {
@@ -21,7 +21,7 @@ entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail>
 item_code
 price
 num
-購入詳細テーブル |}--|| 購入テーブル
+
 }
 
 entity "顧客マスタ" as m_customers <m_customers>{
@@ -34,14 +34,14 @@ tel
 mail
 del_flag
 reg_date
-顧客マスタ |o--o{ 購入テーブル
+
 }
 entity "カテゴリマスタ" as m_category <m_category>{
 + category_id[PK][NN]
 --
 name
 reg_date
-カテゴリマスタ ||--o{ 商品マスタ
+
 }
 
 entity "商品マスタ" as m_items <m_items>{
@@ -54,7 +54,6 @@ image
 detail
 del_flag
 reg_date
-商品マスタ }o--|| カテゴリマスタ
 
 }
 
