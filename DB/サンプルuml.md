@@ -3,6 +3,8 @@
 
 package "ECサイト" as target_system {
 
+"顧客マスタ" |o--o{ "購入テーブル"
+
  entity "購入テーブル" as purchase <d_purchase>
  {
 + order_id[PK]
