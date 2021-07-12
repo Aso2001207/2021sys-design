@@ -1,6 +1,7 @@
 ```
 @startuml
-!include サンプルuml.pu
+!include サンプルuml.md
+
 購入テーブル }o--o| 顧客マスタ
 購入詳細テーブル |}--|| 購入テーブル
 顧客マスタ |o--o{ 購入テーブル
