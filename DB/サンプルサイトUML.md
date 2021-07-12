@@ -1,6 +1,5 @@
 ```startuml
 @startuml erd
- !include ECサイト
 
 購入テーブル }o--o| 顧客マスタ
 購入詳細テーブル }|--|| 購入テーブル
