@@ -3,7 +3,7 @@
 
 
 
- entity "購入テーブル" as purchase <d_purchase>
+ entity "購入テーブル" as purchase <d_purchase> }o--o| m_customer
  {
 + order_id[PK]
 --
@@ -51,7 +51,6 @@ del_flag
 reg_date
 }
 
-m_customer |o--o{ d_purchase
 
  
 
