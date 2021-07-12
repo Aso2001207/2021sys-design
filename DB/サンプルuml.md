@@ -3,7 +3,6 @@
 
 package "ECサイト" as target_system {
 
-顧客マスタ |o--o{ 購入テーブル
 
  entity "購入テーブル" as purchase <d_purchase>
  {
@@ -52,6 +51,9 @@ detail
 del_flag
 reg_date
 }
+
+@startuml
+顧客マスタ |o--o{ 購入テーブル
 }
 
 
