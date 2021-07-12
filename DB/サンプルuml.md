@@ -51,6 +51,7 @@ del_flag
 reg_date
 }
 
+m_customer |o--o{ d_purchase
 
  
 
