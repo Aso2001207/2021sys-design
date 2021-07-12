@@ -1,7 +1,7 @@
 ```startuml
 @startuml
 
-
+package "ECサイト" as target_system {
 
  entity "購入テーブル" as purchase <d_purchase>
  {
@@ -50,8 +50,9 @@ detail
 del_flag
 reg_date
 }
+}
 
-"顧客マスタ" |o--o{ "購入テーブル"
+
 
  
 
