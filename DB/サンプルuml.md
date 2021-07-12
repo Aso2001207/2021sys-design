@@ -3,7 +3,7 @@
 
 
 
- entity "購入テーブル" as purchase <d_purchase> }o--o| m_customer
+ entity "購入テーブル" as purchase <d_purchase>
  {
 + order_id[PK]
 --
