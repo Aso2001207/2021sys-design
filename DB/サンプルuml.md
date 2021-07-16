@@ -56,6 +56,7 @@ del_flag
 reg_date
 
 }
+}
 ```uml
 @startuml
 
@@ -64,7 +65,7 @@ reg_date
 商品マスタ }o--|| カテゴリマスタ
 @enduml
 ```
-}
+
 
 
  
