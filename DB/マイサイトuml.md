@@ -1,5 +1,12 @@
 ```uml
 @startuml
+
+
+package "ECサイト" as target_system {
+
+```uml
+@startuml
+
 !define TEBUE_MARK_COLOR RED
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
@@ -163,6 +170,7 @@ reg_date
 }
 @enduml
 ```
+}
 
 
  purchase }o--o| m_customers 
