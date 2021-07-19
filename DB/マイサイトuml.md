@@ -2,7 +2,7 @@
 ```uml
 @startuml
 
-package "ECサイト" as target_system {
+
 
 !define TEBUE_MARK_COLOR RED
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
@@ -21,6 +21,8 @@ skinparam class {
     'リレーションの色
     ArrowColor Black
 }
+
+package "ECサイト" as target_system {
  entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK]
 --
