@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define TABLE_MARK_COLOR Orange 
+!define TABLE_MARK_COLOR BLUE 
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 'グラデーションさせる場合 #xx-xx
@@ -33,7 +33,7 @@ total_price
 ```uml
 @startuml
 
-!define TABLE_MARK_COLOR Blue 
+!define TABLE_MARK_COLOR BLUE
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 'グラデーションさせる場合 #xx-xx
