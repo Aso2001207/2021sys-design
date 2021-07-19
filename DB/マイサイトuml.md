@@ -1,7 +1,7 @@
 
 ```uml
 @startuml
-
+package "ECサイト" as target_system {
 
 
 !define TEBUE_MARK_COLOR RED
@@ -22,7 +22,7 @@ skinparam class {
     ArrowColor Black
 }
 
-package "ECサイト" as target_system {
+
  entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK]
 --
@@ -169,14 +169,14 @@ reg_date
 }
 @enduml
 ```
-}
+
 
 
  purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
  m_items }o--|| m_category
 
-
+}
  
 
 
