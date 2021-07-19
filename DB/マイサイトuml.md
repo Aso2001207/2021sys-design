@@ -1,7 +1,6 @@
 
 ```uml
 @startuml
-package "ECサイト" as target_system {
 
 
 !define TEBUE_MARK_COLOR RED
@@ -175,11 +174,4 @@ reg_date
  purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
  m_items }o--|| m_category
-
-}
- 
-
-
-@enduml
-```
 
