@@ -163,7 +163,7 @@ reg_date
 }
 @enduml
 ```
-}
+
 
  purchase }o--o| m_customers 
  d_purchase_detail }|--|| purchase
