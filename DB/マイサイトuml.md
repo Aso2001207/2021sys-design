@@ -1,6 +1,6 @@
 ```uml
 @startuml
-!define TEBUE_MARK_COLOR BLUE 
+!define TEBUE_MARK_COLOR RED
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 'グラデーションさせる場合 #xx-xx
@@ -17,8 +17,7 @@ skinparam class {
     'リレーションの色
     ArrowColor Black
 }
- entity "購入テーブル" as purchase <d_purchase>
- <<T,TEBUE_MARK_COLOR>>{
+ entity "購入テーブル" as purchase <d_purchase> <<T,TEBUE_MARK_COLOR>>{
 + order_id[PK]
 --
 customer_code
@@ -33,7 +32,7 @@ total_price
 ```uml
 @startuml
 
-!define TEBUE_MARK_COLOR BLUE
+!define TEBUE_MARK_COLOR RED
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 'グラデーションさせる場合 #xx-xx
@@ -51,8 +50,7 @@ skinparam class {
     ArrowColor Black
 }
 
-entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail>
-<<T,TEBUE_MARK_COLOR>>{
+entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail> <<T,TEBUE_MARK_COLOR>>{
 + order_id [PK][NN][FK]
 + detail_id [PK]
 --
