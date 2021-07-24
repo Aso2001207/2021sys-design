@@ -2,7 +2,7 @@
 ```uml
 @startuml
 
-
+!define MASTER_MARK_COLOR Orange
 !define TEBUE_MARK_COLOR RED
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
@@ -31,29 +31,6 @@ total_price
 
 }
 
-@enduml
-```
-
-```uml
-@startuml
-
-!define TEBUE_MARK_COLOR RED
-!define TRANSACTION_MARK_COLOR DeepSkyBlue
-
-'グラデーションさせる場合 #xx-xx
-!define MAIN_ENTITY #MintCream-MistyRose
-
-/'
-  デフォルト色を"skinparam class"で設定します。
-'/
-skinparam class {
-    '図の背景
-    BackgroundColor Snow
-    '図の枠
-    BorderColor Black
-    'リレーションの色
-    ArrowColor Black
-}
 
 entity "購入詳細テーブル" as d_purchase_detail <d_purchase_detail> <<T,TEBUE_MARK_COLOR>>{
 + order_id [PK][NN][FK]
@@ -65,28 +42,8 @@ num
 
 }
 
-@enduml
-```
-```uml
-@startuml
 
-!define MASTER_MARK_COLOR Orange 
-!define TRANSACTION_MARK_COLOR DeepSkyBlue
 
-'グラデーションさせる場合 #xx-xx
-!define MAIN_ENTITY #MintCream-MistyRose
-
-/'
-  デフォルト色を"skinparam class"で設定します。
-'/
-skinparam class {
-    '図の背景
-    BackgroundColor Snow
-    '図の枠
-    BorderColor Black
-    'リレーションの色
-    ArrowColor Black
-}
 entity "顧客マスタ" as m_customers <m_customers> <<M,MASTER_MARK_COLOR>>{
 + customaer_code [PK][NN]
 --
@@ -98,29 +55,9 @@ mail
 del_flag
 reg_date
 
-@enduml
-```
-
-```
-@startuml
-
-!define MASTER_MARK_COLOR Orange 
-!define TRANSACTION_MARK_COLOR DeepSkyBlue
-
-'グラデーションさせる場合 #xx-xx
-!define MAIN_ENTITY #MintCream-MistyRose
-
-/'
-  デフォルト色を"skinparam class"で設定します。
-'/
-skinparam class {
-    '図の背景
-    BackgroundColor Snow
-    '図の枠
-    BorderColor Black
-    'リレーションの色
-    ArrowColor Black
 }
+
+
 entity "カテゴリマスタ" as m_category <m_category> <<M,MASTER_MARK_COLOR>>{
 + category_id[PK][NN]
 --
@@ -129,29 +66,7 @@ reg_date
 
 }
 
-@enduml
-```
 
-```uml
-@startuml
-
-!define MASTER_MARK_COLOR Orange 
-!define TRANSACTION_MARK_COLOR DeepSkyBlue
-
-'グラデーションさせる場合 #xx-xx
-!define MAIN_ENTITY #MintCream-MistyRose
-
-/'
-  デフォルト色を"skinparam class"で設定します。
-'/
-skinparam class {
-    '図の背景
-    BackgroundColor Snow
-    '図の枠
-    BorderColor Black
-    'リレーションの色
-    ArrowColor Black
-}
 
 
 entity "商品マスタ" as m_items <m_items><<M,MASTER_MARK_COLOR>>{
