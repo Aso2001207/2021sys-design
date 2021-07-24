@@ -81,12 +81,17 @@ del_flag
 reg_date
 
 }
+
+purchase }o--o| m_customers 
+ d_purchase_detail }|--|| purchase
+ m_items }o--|| m_category
+
+
+
+
 @enduml
 ```
 
 
 
- purchase }o--o| m_customers 
- d_purchase_detail }|--|| purchase
- m_items }o--|| m_category
-
+ 
